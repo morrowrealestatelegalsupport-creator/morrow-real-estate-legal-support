@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Independent real estate and landlord-tenant paralegal support for Wisconsin attorneys.">
+<title>Morrow Real Estate Legal Support</title>
+<style>
+:root{--black:#171717;--gold:#b99a60;--cream:#f8f5ee}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,serif;color:var(--black);background:var(--cream);line-height:1.7}
+header{background:#141414;color:white;padding:24px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.brand{font-size:20px;letter-spacing:1px;color:#dfc38d}
+nav a{color:white;text-decoration:none;margin-right:17px;font:13px Arial,sans-serif}
+.hero{background:#171717;color:white;padding:110px 8%;text-align:center}
+.eyebrow{font:12px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(36px,6vw,70px);line-height:1.13;font-weight:normal;margin:25px auto;max-width:950px}
+.hero p{max-width:650px;margin:20px auto 35px;color:#ddd}
+.btn{display:inline-block;background:var(--gold);color:#111;padding:15px 28px;text-decoration:none;font:600 13px Arial,sans-serif;letter-spacing:1px}
+section{padding:75px 8%;max-width:1200px;margin:auto}
+h2{font-size:clamp(30px,4vw,45px);font-weight:normal;line-height:1.2}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.service{background:white;padding:30px;border-top:3px solid var(--gold)}
+.service h3{font-size:22px;font-weight:normal}
+.about{background:#ece5d9;max-width:none}
+.about-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr 1.3fr;gap:45px;align-items:center}
+.portrait{width:100%;max-height:560px;object-fit:cover;object-position:center 20%;background:#d8d0c3}
+.contact{background:#171717;color:white;max-width:none;text-align:center}
+.contact p{color:#ddd}
+.contact a.email{color:#dfc38d;overflow-wrap:anywhere}
+form{max-width:620px;margin:35px auto;text-align:left}
+label{display:block;font:13px Arial,sans-serif;margin:16px 0 6px}
+input,select,textarea{width:100%;padding:13px;border:1px solid #aaa;border-radius:0;font:15px Arial,sans-serif}
+textarea{min-height:110px}
+button{border:0;cursor:pointer;margin-top:20px}
+.notice{font:12px Arial,sans-serif;color:#ccc;line-height:1.6}
+footer{background:#0c0c0c;color:#bbb;text-align:center;padding:35px 8%;font:12px Arial,sans-serif;line-height:1.8}
+@media(max-width:700px){.about-inner{grid-template-columns:1fr}header{justify-content:center;text-align:center}nav a{display:inline-block;margin:5px}.hero{padding:80px 7%}section{padding:55px 7%}}
+</style>
+</head>
+<body>
+<header>
+<div class="brand">MORROW<br>REAL ESTATE LEGAL SUPPORT</div>
+<nav><a href="#services">Services</a><a href="#about">About Me</a><a href="#contact">Attorney Inquiries</a></nav>
+</header>
+<div class="hero">
+<div class="eyebrow">Wisconsin | Attorney-Focused Support</div>
+<h1>Focused Legal Support.<br>Professional Precision.</h1>
+<p>Independent freelance paralegal support specializing in Wisconsin real estate and landlord-tenant matters, exclusively for licensed attorneys and law firms.</p>
+<a class="btn" href="#contact">INQUIRE ABOUT SERVICES</a>
+</div>
+<section id="services">
+<div class="eyebrow">Practice Focus</div>
+<h2>Specialized Support for Wisconsin Attorneys</h2>
+<p>I provide research, drafting, and case-management assistance under the direction and supervision of retaining counsel.</p>
+<div class="grid">
+<div class="service"><h3>Real Estate Legal Support</h3><p>Attorney-directed assistance with transaction documents, property-related research, document review, and real estate matter organization.</p></div>
+<div class="service"><h3>Landlord-Tenant Matters</h3><p>Legal research, lease-related drafting support, notices, and eviction litigation preparation under attorney supervision.</p></div>
+<div class="service"><h3>Litigation & Case Preparation</h3><p>Draft pleadings, motions, discovery materials, correspondence, and case chronologies for attorney review and approval.</p></div>
+</div>
+</section>
+<section class="about" id="about">
+<div class="about-inner">
+<div><img class="portrait" src="portrait.jpg" alt="Professional portrait of the founder of Morrow Real Estate Legal Support"></div>
+<div>
+<div class="eyebrow">Independent Professional Support</div>
+<h2>About Me</h2>
+<p>I'm the founder of Morrow Real Estate Legal Support, an independent freelance paralegal service dedicated to supporting Wisconsin attorneys in real estate and landlord-tenant matters.</p>
+<p>My background in real estate and paralegal studies informs my approach to legal research, document preparation, organization, and detail-oriented support.</p>
+<p>I work directly with retaining attorneys, following their instructions and providing work product for their review and approval.</p>
+</div></div>
+</section>
+<section class="contact" id="contact">
+<div class="eyebrow">Attorney Inquiries Only</div>
+<h2>Let's Discuss Your Legal Support Needs</h2>
+<p>For project inquiries and availability, contact me at<br><a class="email" href="mailto:morrowrealestatelegalsupport@gmail.com">morrowrealestatelegalsupport@gmail.com</a></p>
+<form id="inquiry">
+<label for="attorney">Attorney Name</label><input id="attorney" required>
+<label for="firm">Law Firm</label><input id="firm" required>
+<label for="email">Professional Email</label><input id="email" type="email" required>
+<label for="service">Service Needed</label>
+<select id="service"><option>Real Estate Support</option><option>Landlord-Tenant Support</option><option>Litigation Preparation</option><option>Other Attorney-Directed Support</option></select>
+<label for="message">Brief Project Description</label><textarea id="message" required></textarea>
+<p class="notice">Do not include confidential, privileged, or client-identifying information. Submission opens your email application; it does not transmit information automatically.</p>
+<button class="btn" type="submit">PREPARE EMAIL INQUIRY</button>
+</form>
+</section>
+<footer>
+MORROW REAL ESTATE LEGAL SUPPORT<br>
+Services exclusively for licensed attorneys and law firms. I am not an attorney and do not provide legal advice, legal representation, or services directly to the public. All substantive legal work is performed under the direction and supervision of retaining counsel.<br><br>
+© 2026 Morrow Real Estate Legal Support
+</footer>
+<script>
+document.getElementById('inquiry').addEventListener('submit',function(e){
+e.preventDefault();
+const v=id=>document.getElementById(id).value;
+const body='Attorney: '+v('attorney')+'\nFirm: '+v('firm')+'\nEmail: '+v('email')+'\nService: '+v('service')+'\n\nProject: '+v('message');
+window.location.href='mailto:morrowrealestatelegalsupport@gmail.com?subject='+encodeURIComponent('Attorney Service Inquiry')+'&body='+encodeURIComponent(body);
+});
+</script>
+</body></html>
